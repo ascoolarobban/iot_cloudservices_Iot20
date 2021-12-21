@@ -22,7 +22,8 @@
 - [What's included](#whats-included)
 - [Wiring](#wiring)
 - [Bugs and feature requests](#bugs-and-feature-requests)
-- [Creators](#creators)
+- [Creator](#creator)
+- [Contact](#contact)
 - [Thanks](#thanks)
 - [Copyright and license](#copyright-and-license)
 ---
@@ -140,10 +141,13 @@ Have a bug or a feature request? Send me a message to discuss it.
 ## Creator
 
     Robin Ellingsen
+## Contact
+
+
 - <a href="https://www.linkedin.com/in/iotrobban/">Linkedin</a>
 - <a href="https://github.com/ascoolarobban">GitHub</a>
 - [Email]("robin@fauxdelorean.com")
-
+---
 
 
 
