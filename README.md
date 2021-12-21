@@ -140,10 +140,9 @@ Have a bug or a feature request? Send me a message to discuss it.
 ## Creator
 
     Robin Ellingsen
-
-- [Github]("https://github.com/ascoolarobban")
+- <a href="https://www.linkedin.com/in/iotrobban/">Linkedin</a>
+- <a href="https://github.com/ascoolarobban">GitHub</a>
 - [Email]("robin@fauxdelorean.com")
-- [Linkedin]("https://www.linkedin.com/in/iotrobban/")
 
 
 
