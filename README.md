@@ -60,11 +60,11 @@ At-commands are used to send a value over GSM with a GET command to thingsPeak.
 ### System flowchart:
 <a href="https://ibb.co/t8mr2j7"><img src="https://i.ibb.co/vZwndy7/systemskiss.png" alt="systemskiss" border="0"></a>
 
-### ThingsPeak:
+### ThingSpeak:
 ThingSpeak is an IoT analytics platform service that allows you to aggregate, visualize and analyze live data streams in the cloud.
 ThingSpeak provides instant visualizations of data posted by your devices to ThingSpeak.
 
-thingSpeak requires a mathlab user to be able to use its services, this is a good thing, since you later on can use Matlab to perform online analysis and processing of the data as it comes in. 
+ThingSpeak requires a mathlab user to be able to use its services, this is a good thing, since you later on can use Matlab to perform online analysis and processing of the data as it comes in. 
 
 <img src="https://brands.home-assistant.io/_/thingspeak/logo.png" height="50" width="250">
 
@@ -143,10 +143,11 @@ Have a bug or a feature request? Send me a message to discuss it.
 
 - [Github]("https://github.com/ascoolarobban")
 - [Email]("robin@fauxdelorean.com")
+- [Linkedin]("https://www.linkedin.com/in/iotrobban/")
 
 
 
 
 ## Copyright and license
-None an free to use as you wish, cred is always cool, be cool.
+None and free to use as you wish, cred is always cool, be cool.
 Thanks.
