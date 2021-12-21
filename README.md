@@ -44,7 +44,7 @@ In current state we will:
 
 ---
 ## Solution
-###Hardware:
+### Hardware:
 - Arduino nano
 - MQ-2 Sensor
 - 2x 5v Led
@@ -54,7 +54,7 @@ In current state we will:
 - Battery/ 5v power. 
 
 
-###Messaging:
+### Messaging:
 At-commands are used to send a value over GSM with a GET command to thingsPeak.
 
 ### System flowchart:
