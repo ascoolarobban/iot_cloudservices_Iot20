@@ -8,7 +8,7 @@
   <p align="center">
     Fun school-project in <a href="https://github.com/voxic">Emil Nildersens</a> course "IoT and Cloud services".
     An end to end solution to meassure greenhouse emissions with an arduino. Visualizing all the data on thingSpeak, 
-    and getting data from YR.no into mongoDb with a heroku function writtten in python. 
+    and getting data from YR.no into mongoDb with a function writtten in python to upload to heroku every hour. 
     <br>
     <a href="https://reponame/issues/new?template=bug.md">Report bug</a>
     ·
@@ -17,7 +17,7 @@
 
 
 ## Table of contents
-- [Use case](#Use Case)
+- [Use Case](#Use-Case)
 - [Solution](#solution)
 - [What's included](#whats-included)
 - [Wiring](#wiring)
