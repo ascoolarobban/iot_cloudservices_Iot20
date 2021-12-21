@@ -87,6 +87,12 @@ Heroku is a platform as a service (PaaS) that enables developers to build, run, 
 
 <img src="https://iconape.com/wp-content/files/xn/371066/svg/371066.svg" height="50" width="50">
 
+
+## Api:
+This is for lon:lat: Stockholm, Sweden.
+
+    Yr.no
+    https://api.met.no/weatherapi/locationforecast/2.0/compact.json?lat=59.3293&lon=18.0686
 ---
 ## Wiring
 ###Arduino nano:

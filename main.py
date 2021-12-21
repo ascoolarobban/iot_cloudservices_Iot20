@@ -21,7 +21,7 @@ def get_yr_data():
 #Connectiong to mongodDB
 def get_database():
     # Provide the mongodb atlas url to connect python to mongodb using pymongo
-    CONNECTION_STRING = "mongodb+srv://Batman:Batman123@clustero2.hqevo.mongodb.net/Co2?retryWrites=true&w=majority"
+    CONNECTION_STRING = "mongodb+srv://<Username>:<password>@clustero2.hqevo.mongodb.net/Co2?retryWrites=true&w=majority"
 
     # Create a connection using MongoClient. You can import MongoClient or use pymongo.MongoClient
     client = MongoClient(CONNECTION_STRING)

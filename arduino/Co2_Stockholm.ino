@@ -5,7 +5,6 @@
 #include <SoftwareSerial.h>
 #include "Adafruit_FONA.h"
 #include <MQ2.h>
-#include "LowPower.h"
 
 #define FONA_RX 9
 #define FONA_TX 8
@@ -13,7 +12,7 @@
 #define lipo A3
 
 long randNumber;
-double atm_pressure;
+double co2_value;
 int half_hour = 60000*30;
 
 SoftwareSerial SIM800ss = SoftwareSerial(8, 9);
@@ -27,8 +26,8 @@ int mq2Pin = 0;
 
 MQ2 mq2(mq2Pin);
 char http_cmd[80];
-char url_string[] = "api.thingspeak.com/update?api_key=Q2RY59QVKM6OXORT&field1";
-char atm_pressure_string[20];
+char url_string[] = "api.thingspeak.com/update?api_key=xxxxxxxxxx&field1"; // replace x's with key
+char co2_string[20];
 
 int net_status;
 
@@ -48,7 +47,7 @@ void setup() {
 
   Serial.begin(115200);
   
-  Serial.println("STARTAR UPP!");
+  Serial.println("Strarting!");
   Serial.println("Initializing SIM800L....");
 
   SIM800ss.begin(4800); 
@@ -103,17 +102,12 @@ void setup() {
 }
 
 void loop() {
- 
-
-    
-    int lipoV = analogRead(lipo);
-    lipoValue(lipoV);  
     //float co = mq2.readCO();
     delay(5000);
     
-    atm_pressure = random(1000000,2000000);
-    dtostrf(atm_pressure, 5, 0, atm_pressure_string);
-    sprintf(http_cmd,"%s=%s",url_string,atm_pressure_string);
+    co2_value = random(1000000,2000000); //put readings here instead of random values.
+    dtostrf(co2_value, 5, 0, co2_string);
+    sprintf(http_cmd,"%s=%s",url_string,co2_string);
     delay(2000);
 
     
@@ -129,11 +123,11 @@ void loop() {
            blinkRed();
            resetFunc(); 
       }else{
-        
+        //this is where stuff happens..
         tcp_on = true;
-        atm_pressure = random(1000000,2000000);
-        dtostrf(atm_pressure, 5, 0, atm_pressure_string);
-        sprintf(http_cmd,"%s=%s",url_string,atm_pressure_string);
+        co2_value = random(1000000,2000000); //need to give co2_value a new value since it wont leave this place unless it restarts.
+        dtostrf(co2_value, 5, 0, co2_string);
+        sprintf(http_cmd,"%s=%s",url_string,co2_string);
         digitalWrite(GREEN, HIGH);
         while (length > 0) {
            while (SIM800.available()) {
@@ -145,21 +139,17 @@ void loop() {
         Serial.println(response);
         if(statuscode == 200){
           Serial.print("Value: ");
-          Serial.println(atm_pressure);
+          Serial.println(co2_value);
           Serial.println("Success!");
           tcp_on = false;
           delay(5000);
           digitalWrite(GREEN, LOW);
           delay(half_hour);
         }
-
       }
-
       
     }
-    
-    
-   // LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+
 }
 void blinkRed(){
   digitalWrite(RED, HIGH);
@@ -191,19 +181,5 @@ void blinkGreen(){
   digitalWrite(GREEN, LOW);
   delay(100);
 }
-void lipoValue(int lipoV){
-  if(lipoV <= 650){
-    Serial.println("Lipo level: LOW");
-  }
-    if(lipoV >800 && lipoV <=950){
-      Serial.println("Lipo level: 50%");
-  }
-    if(lipoV >800 && lipoV <=950){
-      Serial.println("Lipo level: 50%");
-  }
-    if(lipoV >950){
-      Serial.println("Lipo level: Full");
-  }
-  
   
 }
