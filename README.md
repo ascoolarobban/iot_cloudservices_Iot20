@@ -6,7 +6,7 @@
   <h3 align="center">Co2 Stockholm</h3>
 
   <p align="center">
-    Fun school-project in [Emil Nildersens](https://github.com/voxic) course "IoT and Cloud services".
+    Fun school-project in <a href="https://github.com/voxic">Emil Nildersens</a> course "IoT and Cloud services".
     An end to end solution to meassure greenhouse emissions with an arduino. Visualizing all the data on thingSpeak, 
     and getting data from YR.no into mongoDb with a heroku function writtten in python. 
     <br>
@@ -17,7 +17,7 @@
 
 
 ## Table of contents
-- [Use case](#Use case)
+- [Use case](#Use Case)
 - [Solution](#solution)
 - [What's included](#whats-included)
 - [Wiring](#wiring)
