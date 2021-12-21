@@ -95,7 +95,7 @@ This is for lon:lat: Stockholm, Sweden.
     https://api.met.no/weatherapi/locationforecast/2.0/compact.json?lat=59.3293&lon=18.0686
 ---
 ## Wiring
-###Arduino nano:
+### Arduino nano:
 -Gnd.<br>
 -Vin 5v.
 
@@ -106,7 +106,7 @@ This is for lon:lat: Stockholm, Sweden.
 -D8 Tx on Sim800L.<br>
 -D9 Rst on Sim800L.<br>
 
-####Make sure the power is at 5v, the Sim800L wont work properly otherwise.
+#### Make sure the power is at 5v, the Sim800L wont work properly otherwise.
 
 
 <a href="https://ibb.co/X78TDSD"><img src="https://i.ibb.co/6HB58g8/Screenshot-2021-12-20-at-19-38-36.png" alt="Screenshot-2021-12-20-at-19-38-36" border="0"></a>
