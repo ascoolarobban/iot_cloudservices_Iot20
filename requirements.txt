@@ -1,0 +1,5 @@
+json
+requests
+pymongo[srv]
+time
+dnspython==2.0.0
